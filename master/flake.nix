@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-coverage-master.flake = false;
+  inputs.src-coverage-master.ref   = "refs/heads/master";
   inputs.src-coverage-master.owner = "yglukhov";
-  inputs.src-coverage-master.ref   = "master";
   inputs.src-coverage-master.repo  = "coverage";
   inputs.src-coverage-master.type  = "github";
   
