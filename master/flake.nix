@@ -1,5 +1,5 @@
 {
-  description = ''Code coverage library'';
+  description = ''Code coverage library for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-coverage-master.flake = false;
   inputs.src-coverage-master.owner = "yglukhov";
-  inputs.src-coverage-master.ref   = "refs/heads/master";
+  inputs.src-coverage-master.ref   = "master";
   inputs.src-coverage-master.repo  = "coverage";
   inputs.src-coverage-master.type  = "github";
   
   inputs."nake".owner = "nim-nix-pkgs";
   inputs."nake".ref   = "master";
   inputs."nake".repo  = "nake";
+  inputs."nake".dir   = "1_9_4";
   inputs."nake".type  = "github";
   inputs."nake".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nake".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
