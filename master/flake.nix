@@ -11,6 +11,7 @@
   inputs.src-coverage-master.ref   = "refs/heads/master";
   inputs.src-coverage-master.owner = "yglukhov";
   inputs.src-coverage-master.repo  = "coverage";
+  inputs.src-coverage-master.dir   = "";
   inputs.src-coverage-master.type  = "github";
   
   inputs."nake".owner = "nim-nix-pkgs";
