@@ -1,5 +1,33 @@
 {
   "nodes": {
+    "coverage-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nake": "nake",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-coverage-master": "src-coverage-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556695,
+        "narHash": "sha256-nVJAbgkI5HsAzFXUPC+bU5mGN4ZQHk4kVMS8uDxFKZA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "coverage",
+        "rev": "778d2970f525c8c2d11c5dfe540c319d3f4442b9",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "coverage",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -24,20 +52,22 @@
     "nake": {
       "inputs": {
         "flakeNimbleLib": [
+          "coverage-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "coverage-master",
           "nixpkgs"
         ],
         "src-nake-1_9_4": "src-nake-1_9_4"
       },
       "locked": {
         "dir": "1_9_4",
-        "lastModified": 1651918146,
-        "narHash": "sha256-k/S5lHW5bnSnDM4tGVRFVpDs3MoUEBOYNUSS010vsJQ=",
+        "lastModified": 1651555678,
+        "narHash": "sha256-iDFYS2yeG9oAfVOiFgJn7hccVQNCtgy7EUZIvG14ZZw=",
         "owner": "nim-nix-pkgs",
         "repo": "nake",
-        "rev": "01782b4a5ffe8cbdce15f5be8a2ade4787386db4",
+        "rev": "eaf6509893aacfba511a945d4dc345435e138edc",
         "type": "github"
       },
       "original": {
@@ -61,10 +91,9 @@
     },
     "root": {
       "inputs": {
+        "coverage-master": "coverage-master",
         "flakeNimbleLib": "flakeNimbleLib",
-        "nake": "nake",
-        "nixpkgs": "nixpkgs",
-        "src-coverage-master": "src-coverage-master"
+        "nixpkgs": "nixpkgs"
       }
     },
     "src-coverage-master": {
