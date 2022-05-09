@@ -7,7 +7,7 @@
   "license": "MIT",
   "web": "https://github.com/yglukhov/coverage",
   "refs": [
-    "fatal: unable to access 'https://github.com/yglukhov/coverage/': OpenSSL SSL_read: Connection reset by peer, errno 104",
+    "fatal: unable to access 'https://github.com/yglukhov/coverage/': SSL connection timeout",
     ""
   ],
   "heads": []
